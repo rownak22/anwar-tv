@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anwar TV | News Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginBox" class="login-box">
+  <h2>Anwar TV Login</h2>
+  <select id="role">
+    <option value="user">User</option>
+    <option value="admin">Admin</option>
+  </select>
+  <input type="text" id="username" placeholder="Username" />
+  <input type="password" id="password" placeholder="Password" />
+  <button onclick="login()">Login</button>
+</div>
+
+<!-- MAIN SITE -->
+<div id="site" style="display:none">
+  <header class="header">
+    <h1>Anwar <span>TV</span></h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Bangladesh</a>
+      <a href="#">World</a>
+      <a href="#">Sports</a>
+    </nav>
+  </header>
+
+  <div class="breaking">BREAKING: Latest news update on Anwar TV</div>
+
+  <section class="news" id="newsList">
+    <div class="card">Welcome to Anwar TV News</div>
+  </section>
+
+  <!-- ADMIN PANEL -->
+  <div id="adminPanel" class="admin-panel" style="display:none">
+    <h2>Admin Panel</h2>
+    <input type="text" id="newsInput" placeholder="Add news headline" />
+    <button onclick="addNews()">Add News</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
